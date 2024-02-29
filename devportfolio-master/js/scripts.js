@@ -106,6 +106,20 @@
     testimonialsContainer.addEventListener('mouseenter', pauseTestimonialAnimations);
     testimonialsContainer.addEventListener('mouseleave', resumeTestimonialAnimations);
 
+    // Function to handle header animation
+    function animateHeaderOnScroll() {
+        var header = document.querySelector('.heading');
+        var headerPosition = header.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (headerPosition < windowHeight * 0.75) { // Change 0.75 to adjust when to trigger the animation
+            header.classList.add('active');
+        }
+    }
+
+    // Listen for scroll events to trigger header animation
+    window.addEventListener('scroll', animateHeaderOnScroll);
+
     // New code for the overlay and name animation
     document.addEventListener("DOMContentLoaded", function() {
         // Select the overlay and name elements
