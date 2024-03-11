@@ -1,7 +1,7 @@
 body {
     font-family: 'Helvetica';
     font-size: 18px;
-    background-color: #fffcf7;
+    background-color: #ffffff;
     color: #062439
 }
 
@@ -47,7 +47,7 @@ header {
 
 header ul {
     display: inline-block;
-    /*background: #fffcf7;*/
+    /*background: #ffffff;*/
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -61,20 +61,20 @@ header li {
 
 header a {
     display: block;
-    color: #fffcf7;
+    color: #ffffff;
     padding: 10px
 }
 
 header a:hover{
-    background-color: #fffcf7;
+    background-color: #ffffff;
     color: #062439;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 header a:focus {
     color: #062439;
-    background: #fffcf7;
+    background: #ffffff;
     text-decoration: none;
     border-radius: 4px;
 }
@@ -103,14 +103,14 @@ header.sticky {
     z-index: 20;
     padding: 0 7px;
     border-radius: 4px;
-    background: #fffcf7
+    background: #ffffff
 }
 
 #mobile-menu-close {
     display: none;
     text-align: right;
     width: 100%;
-    background: #fffcf7;
+    background: #ffffff;
     font-size: 1.5em;
     padding-right: 15px;
     padding-top: 10px;
@@ -184,22 +184,23 @@ footer {
 
 .social a:hover {
     background-color: #062439;
-    color: #fffcf7;
+    color: #ffffff;
     border-radius: 25px;
 }
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fffcf7;
+    color: #ffffff;
+    background-color: #ff5100;
     padding: 20px 50px;
-    border: 3px solid #fffcf7;
-    border-radius: 3px;
+    /*border: 3px solid #ffffff;*/
+    border-radius: 4px;
     transition: .5s ease all;
     font-size: 1.1em;
 }
 
 .btn-rounded-white:hover {
-    background-color: #fffcf7;
+    background-color: #ffffff;
     color: #062439;
     text-decoration: none;
     font-size: 1.1em;
@@ -233,7 +234,7 @@ footer {
     margin: 0 auto;
     font-weight: bold;
     text-align: center;
-    /*background: #fffcf7*/
+    /*background: #ffffff*/
 }
 
 #lead {
@@ -248,7 +249,7 @@ footer {
 }
 
 #lead-content {
-    color: #fffcf7;
+    color: #ffffff;
     position: absolute;
     z-index: 10;
     top: 50%; /* Adjust the Button location */
@@ -262,8 +263,13 @@ footer {
     margin: 0
 }
 
+#lead-content h3 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
 #lead-content h1 {
-    color: #fffcf7;
+    color: #ffffff;
     font-weight: 900;
     font-size: 3em;
     text-transform: uppercase;
@@ -272,7 +278,7 @@ footer {
 }
 
 #lead-content h2 {
-    color: #fffcf7;
+    color: #ffffff;
     font-weight: 500;
     font-size: 2em;
     margin-bottom: 15px
@@ -303,7 +309,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fffcf7
+    color: #ffffff
 }
 
 #lead-down span {
@@ -337,6 +343,22 @@ footer {
     }
 }
 
+#why-us{
+    padding: 200px 50px;
+    width: 100%;
+}
+
+#why-us h2 {
+    font-size: 100px;
+    font-weight: lighter;
+    color: #ff5100;
+}
+
+#why-us p {
+    font-size: 20px;
+    color: #000000;
+}
+
 #about {
     padding: 200px 50px;
     width: 100%;
@@ -344,7 +366,7 @@ footer {
     border-bottom: 1px solid #062439;*/
 }
 
-#about h2 {
+#about h3 {
     color: #062439
 }
 
@@ -359,10 +381,10 @@ footer {
     color: #062439;
     display: none;
     position: absolute;
-    background-color: #fffcf7;
+    background-color: #ffffff;
     min-width: 200px;
     padding: 10px;
-    border: 1px solid #fffcf7;
+    border: 3px solid #ff5100;
     border-radius: 5px;
     z-index: 1;
     transition: 1s ease all;
@@ -421,7 +443,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #fffcf7;
+    background: #ffffff;
     z-index: 0
 }
 
@@ -430,15 +452,15 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #fffcf7;
-    background: linear-gradient(to bottom, #fffcf7, rgba(52, 152, 219, 0));
+    background: #ffffff;
+    background: linear-gradient(to bottom, #ffffff, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
 }
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fffcf7;
+    background: #ffffff;
     /*border: 1px solid #062439;
     border-radius: 3px;*/
     padding: 15px;
@@ -477,7 +499,7 @@ footer {
     color: #062439;
     width: 50px;
     height: 50px;
-    background: #fffcf7;
+    background: #ffffff;
     /*border-radius: 50%;*/
     float: left;
     z-index: 99;
@@ -520,7 +542,7 @@ footer {
     animation: rotateTestimonials 30s linear infinite;
     transition: all 0.5s ease;
     padding: 15px;
-    background-color: #fffcf7;
+    background-color: #ffffff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -545,12 +567,12 @@ footer {
 
 #testimonials h2 {
     font-size: 30px;
-    color: #062439
+    color: #ff5100
 }
 
 #projects {
     padding: 50px 15px;
-    /*border-bottom: 1px solid #fffcf7;*/
+    /*border-bottom: 1px solid #ffffff;*/
     text-align: center
 }
 
@@ -626,7 +648,7 @@ footer {
     margin: 7px;
     padding: 5px 10px;
     color: #062439;
-    background: #fffcf7;
+    background: #ffffff;
     list-style: none;
     cursor: default;
     font-size: 1.2em
@@ -636,7 +658,7 @@ footer {
     display: flex;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -684,6 +706,13 @@ footer {
     grid-gap: 1px;
 }
 
+.grid-container2 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns layout */
+    grid-gap: 1px;
+}
+
 .options label {
     display: block;
     margin-bottom: 1px;
@@ -693,7 +722,7 @@ footer {
 
 #analysis-report-form {
     padding: 100px 15px;
-    background: #fffcf7;
+    background: #ffffff;
     text-align: left
 }
 
@@ -702,10 +731,10 @@ footer {
     width: 25%;
     padding: 15px;
     margin-bottom: 15px;
-    border: solid #062439;
+    /*border: solid #062439;
+    border-width: 1px;*/
     border-radius: 4px;
-    border-width: 1px;
-    background-color: #fffcf7;
+    background-color: #f3f3f3;
     transition: .5s ease all;
     font-weight: normal;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -716,7 +745,7 @@ footer {
 
 #analysis-report-form .file-upload-label:hover {
     background-color: #062439;
-    color: #fffcf7;
+    color: #ffffff;
 }
 
 #analysis-report-form input[type="file"] {
@@ -728,9 +757,9 @@ footer {
 #analysis-report-form input[type="email"]
  {
     width: 100%;
-    border: solid #062439;
+    /*border: solid #062439;
+    border-width: 1px;*/
     border-radius: 4px;
-    border-width: 1px;
 }
 
 #analysis-report-form .name-fields {
@@ -767,7 +796,7 @@ footer {
     padding: 15px;
     border: none;
     margin-bottom: 15px;
-    background-color: #fffcf7;
+    background-color: #f3f3f3;
     transition: .5s ease all;
     font-weight: normal;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -783,7 +812,7 @@ footer {
 
 #analysis-report-form input::-webkit-input-placeholder,
 #analysis-report-form textarea::-webkit-input-placeholder {
-    color: #062439
+    color: #0624393a
 }
 
 #analysis-report-form input:-moz-placeholder,
@@ -806,7 +835,7 @@ footer {
 #analysis-report-form input:focus,
 #analysis-report-form textarea:focus {
     outline: none;
-    background: #fffcf7
+    background: #ffffff
 }
 
 #analysis-report-form textarea {
@@ -817,26 +846,27 @@ footer {
 #analysis-report-form button {
     display: block;
     width: 20%;
-    background: #fffcf7;
-    border: solid #062439;
+    background: #ff5100;
+    /*border: solid #062439;
+    border-width: 1px;*/
+    border: none;
     border-radius: 4px;
-    border-width: 1px;
     padding: 10px 5px;
-    color: #062439;
+    color: #ffffff;
     font-weight: 700;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     transition: .5s ease all
 }
 
 #analysis-report-form button:hover {
-    box-shadow: 0 10px 20px 000(0, 0, 0, 0.19), 0 6px 6px fffcf7(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px 000(0, 0, 0, 0.19), 0 6px 6px ffffff(0, 0, 0, 0.23);
     background-color: #062439;
-    color: #fffcf7;
+    color: #ffffff;
 }
 
 #contact {
     padding: 50px 15px;
-    background: #fffcf7;
+    background: #ffffff;
     text-align: center
 
 }
@@ -885,11 +915,12 @@ footer {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-    border: solid #062439;
+    /*border: solid #062439;
+    border-width: 1px;*/
+    border: none;
     border-radius: 4px;
-    border-width: 1px;
     margin-bottom: 15px;
-    background-color: #fffcf7;
+    background-color: #f3f3f3;
     transition: .5s ease all;
     font-weight: normal;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -898,7 +929,7 @@ footer {
 
 #contact-form select:focus {
     outline: none;
-    background-color: #fffcf7; /* Change background color on focus */
+    background-color: #ffffff; /* Change background color on focus */
 }
 
 #contact-form input,
@@ -907,14 +938,15 @@ footer {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-    border: solid #062439;
+    /*border: solid #062439;
+    border-width: 1px;*/
+    border: none;
     border-radius: 4px;
-    border-width: 1px;
     margin-bottom: 15px;
-    background-color: #fffcf7;
+    background-color: #f3f3f3;
     transition: .5s ease all;
     font-weight: normal;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);*/
     color: #062439
 }
 
@@ -943,7 +975,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #fffcf7
+    background: #ffffff
 }
 
 #contact-form textarea {
@@ -954,22 +986,23 @@ footer {
 #contact-form button {
     display: block;
     width: 20%;
-    background: #fffcf7;
+    background: #ff5100;
     padding: 10px 5px;
     margin-bottom: 15px;
-    border: solid #062439;
+    /*border: solid #062439;
+    border-width: 1px;*/
+    border: none;
     border-radius: 4px;
-    border-width: 1px;
-    color: #062439;
+    color: #ffffff;
     font-weight: 700;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     transition: .5s ease all
 }
 
 #contact-form button:hover {
-    box-shadow: 0 10px 20px 000(0, 0, 0, 0.19), 0 6px 6px fffcf7(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px 000(0, 0, 0, 0.19), 0 6px 6px ffffff(0, 0, 0, 0.23);
     background-color: #062439;
-    color: #fffcf7;
+    color: #ffffff;
 }
 
 .optional-section {
@@ -987,7 +1020,7 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     /*border: 1px solid #062439;*/
-    background: #fffcf7;
+    background: #ffffff;
     text-align: left
 }
 
@@ -1049,7 +1082,7 @@ footer {
     }
 
     #lead-content {
-        color: #fffcf7;
+        color: #ffffff;
         position: relative;
         transform: none;
         left: auto;
@@ -1110,7 +1143,7 @@ footer {
     }
 
     #lead-content a {
-        color: #fffcf7;
+        color: #ffffff;
         padding: 10px 20px;
     }
 
@@ -1154,7 +1187,7 @@ footer {
     }
 
     #lead-content a {
-        color: #fffcf7;
+        color: #ffffff;
         font-size: 0.9em;
         padding: 5px 10px;
         margin-left: 100px 
