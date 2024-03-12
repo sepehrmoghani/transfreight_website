@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/hover-styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,14 +22,15 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="index.html#lead-overlay">Home</a>
-            </li>            
+                <a href="#" id="to-top">Home</a>
+            </li>
             <li>
                 <a href="#about">About Us</a>
             </li>
@@ -62,7 +64,7 @@
             <input type="email" name="_replyto" placeholder="Your Email (required)" required>
 
             <label for="question1">What are your savings goals?</label><input type="text" id="question1" name="question1">
-            <label for="question2">What are you looking to achieve by moving to us?</label><input type="text" id="question2" name="question2">
+            <label for="question2">What are you looking to achieve by moving to Transfreight?</label><input type="text" id="question2" name="question2">
             <label for="question3">Any carrier you will not use and why?</label><input type="text" id="question3" name="question3">
             <label for="question4">Are you open to using multiple carriers?</label><input type="text" id="question4" name="question4">
             <label for="question5">Do you currently use a manage freight software?</label><input type="text" id="question5" name="question5">
@@ -169,8 +171,11 @@
                         <li>
                             <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
+                        <li>
+                            <a href="mailto:sales@transfreight.com.au"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
                     </ul>
-                </div>
+                </div>                
             </div>
         </div>
     </footer>
@@ -178,6 +183,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/hover-scripts.js"></script>
 </body>
 
 </html>

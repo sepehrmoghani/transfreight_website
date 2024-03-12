@@ -27,7 +27,8 @@
     });
 
     // Scroll to top
-    $('#to-top').click(function() {
+    $('header a#to-top').click(function(e) {
+        e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
         }, 500);
@@ -144,6 +145,20 @@
         // Initially hide the overlay and name
         overlay.style.opacity = 1;
         name.style.transform = "translateY(0)";
+
+        // JavaScript to trigger the animation on hover
+        const heading = document.querySelector('.heading-fixed');
+
+        heading.addEventListener('mouseenter', function() {
+            heading.style.animation = 'revealWave 1s forwards';
+        });
+
+        heading.addEventListener('mouseleave', function() {
+            heading.style.animation = 'none';
+            setTimeout(() => {
+                heading.style.animation = 'revealWave 1s forwards';
+            }, 50); // Delay to restart animation
+        });
     });
 
 })(jQuery);
