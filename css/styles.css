@@ -257,6 +257,11 @@ footer {
     overflow: hidden;
 }
 
+.typewriter {
+    top: 80%;
+    left: 85%;
+}
+
 .typewriter h3 {
     color: #ffffff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -387,12 +392,6 @@ footer {
     color: #ff5100;
 }
 
-#why-us span {
-    font-size: 100px;
-    font-weight: lighter;
-    color: #ff5100;
-}
-
 #why-us p {
     font-size: 20px;
     color: #000000;
@@ -420,7 +419,7 @@ footer {
     color: #062439;
     display: none;
     position: absolute;
-    background-color: #ffffff;
+    background: #fafafa;
     min-width: 200px;
     padding: 10px;
     border: 3px solid #ff5100;
