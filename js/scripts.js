@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
 
     // Show current year
     $("#current-year").text(new Date().getFullYear());
@@ -7,7 +7,7 @@
     $('html').removeClass('no-js');
 
     // Animate to section when nav is clicked
-    $('header a').click(function(e) {
+    $('header a').click(function (e) {
 
         // Treat as normal link if no-scroll class
         if ($(this).hasClass('no-scroll')) return;
@@ -27,7 +27,7 @@
     });
 
     // Scroll to top
-    $('header a#to-top').click(function(e) {
+    $('header a#to-top').click(function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
@@ -35,7 +35,7 @@
     });
 
     // Scroll to first element
-    $('#lead-down span').click(function() {
+    $('#lead-down span').click(function () {
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
@@ -43,45 +43,45 @@
     });
 
     // Create timeline
-    $('#experience-timeline').each(function() {
+    $('#experience-timeline').each(function () {
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
 
         // Create each timeline block
-        $userContent.each(function() {
+        $userContent.each(function () {
             $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
         });
 
         // Add icons to each block
-        $this.find('.vtimeline-point').each(function() {
+        $this.find('.vtimeline-point').each(function () {
             $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
         });
 
         // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function() {
+        $this.find('.vtimeline-content').each(function () {
             var date = $(this).data('date');
             if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+                $(this).parent().prepend('<span class="vtimeline-date">' + date + '</span>');
             }
         });
 
     });
 
     // Open mobile menu
-    $('#mobile-menu-open').click(function() {
+    $('#mobile-menu-open').click(function () {
         $('header, body').addClass('active');
     });
 
     // Close mobile menu
-    $('#mobile-menu-close').click(function() {
+    $('#mobile-menu-close').click(function () {
         $('header, body').removeClass('active');
     });
 
     // Load additional projects
-    $('#view-more-projects').click(function(e){
+    $('#view-more-projects').click(function (e) {
         e.preventDefault();
-        $(this).fadeOut(300, function() {
+        $(this).fadeOut(300, function () {
             $('#more-projects').fadeIn(300);
         });
     });
@@ -89,7 +89,7 @@
     // Function to pause animations on testimonials hover
     function pauseTestimonialAnimations() {
         var testimonials = document.querySelectorAll('#testimonials .box');
-        testimonials.forEach(function(testimonial) {
+        testimonials.forEach(function (testimonial) {
             testimonial.style.animationPlayState = 'paused';
         });
     }
@@ -97,7 +97,7 @@
     // Function to resume animations on testimonials hover out
     function resumeTestimonialAnimations() {
         var testimonials = document.querySelectorAll('#testimonials .box');
-        testimonials.forEach(function(testimonial) {
+        testimonials.forEach(function (testimonial) {
             testimonial.style.animationPlayState = 'running';
         });
     }
@@ -122,13 +122,13 @@
     window.addEventListener('scroll', animateHeaderOnScroll);
 
     // New code for the overlay and name animation
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         // Select the overlay and name elements
         var overlay = document.querySelector(".intro-overlay");
         var name = document.querySelector(".intro-name");
 
         // Listen for scroll events
-        window.addEventListener("scroll", function() {
+        window.addEventListener("scroll", function () {
             // Calculate how much the user has scrolled
             var scrollPosition = window.scrollY;
 
@@ -149,16 +149,37 @@
         // JavaScript to trigger the animation on hover
         const heading = document.querySelector('.heading-fixed');
 
-        heading.addEventListener('mouseenter', function() {
+        heading.addEventListener('mouseenter', function () {
             heading.style.animation = 'revealWave 1s forwards';
         });
 
-        heading.addEventListener('mouseleave', function() {
+        heading.addEventListener('mouseleave', function () {
             heading.style.animation = 'none';
             setTimeout(() => {
                 heading.style.animation = 'revealWave 1s forwards';
             }, 50); // Delay to restart animation
         });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        function counter(id, start, end, duration) {
+            let obj = document.getElementById(id),
+                current = start,
+                range = end - start,
+                increment = end > start ? 1 : -1,
+                step = Math.abs(Math.floor(duration / range)),
+                timer = setInterval(() => {
+                    current += increment;
+                    obj.textContent = current;
+                    if (current == end) {
+                        clearInterval(timer);
+                    }
+                }, step);
+        }
+        counter("count1", 0, 6, 3000);
+        counter("count2", 0, 30, 3000);
+        counter("count3", 0, 100, 3000);
+        counter("count4", 0, 2, 3000);
     });
 
 })(jQuery);
