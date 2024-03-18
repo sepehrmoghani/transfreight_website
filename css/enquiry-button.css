@@ -1,0 +1,43 @@
+/* Styling for the button */
+.enquiry-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff5100;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Styling for the popup window */
+.enquiry-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 10000;
+}
+
+/* Styling for the form inside the popup */
+.enquiry-form input[type="text"],
+.enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.enquiry-form input[type="submit"] {
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
+    background: #062439;
 }
 
 body.active {
@@ -28,60 +29,56 @@ body.active {
     }
 }
 
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 1000;
     width: 100%;
-    background: #062439;
+    padding: 10px 20px;
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #062439;
 }
 
-header ul {
-    display: inline-block;
-    /*background: #ffffff;*/
-    text-align: center;
-    padding: 15px;
-    margin: 0;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+.header .logo {
+    max-width: 100px;
+    /* Adjust as needed */
 }
 
-header li {
-    display: inline-block
+.header .menu {
+    display: flex;
+    gap: 20px;
 }
 
-header a {
+.header .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header .free-analysis-button {
+    background-color: #ff5100;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header a {
     display: block;
     color: #ffffff;
-    padding: 10px
+    padding: 10px;
 }
 
-header a:hover {
-    /*background-color: #ffffff;*/
+.header .menu a:hover {
     color: #ffffff;
     text-decoration: none;
     border-bottom: 2px solid #ff5100;
     font-weight: bold;
-
-}
-
-header a:focus {
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 2px solid #ff5100;
-    font-weight: bold;
-}
-
-header.active {
-    display: block
-}
-
-header.sticky {
-    position: fixed;
-    z-index: 999
 }
 
 #menu.active {
@@ -123,7 +120,8 @@ header.sticky {
 }
 
 footer {
-    padding: 50px 0
+    padding: 50px 0;
+    background-color: #ffffff;
 }
 
 .copyright {
@@ -211,7 +209,7 @@ footer {
     position: relative;
     display: inline-block;
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 100;
     margin: 0 0 30px 0;
     color: #062439;
     margin-bottom: -5px;
@@ -222,7 +220,7 @@ footer {
 }
 
 .heading-fixed:hover {
-    font-size: 2.2em;
+    font-size: 2.1em;
     border-bottom: 4px solid #ff5100;
     /* Increase font-size on hover */
 }
@@ -438,7 +436,7 @@ footer {
 }
 
 #why-us h2 {
-    font-size: 100px;
+    font-size: 5em;
     font-weight: lighter;
     color: #ff5100;
 }
@@ -473,6 +471,7 @@ footer {
 #about {
     padding: 100px 50px;
     width: 100%;
+    background-color: #ffffff
 }
 
 #about h3 {
@@ -552,6 +551,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     justify-content: center;
+    background: #ffffff;
 }
 
 .hover-text {
@@ -893,12 +893,11 @@ footer {
     margin-bottom: 1px;
 }
 
-
-
 #analysis-report-form {
     padding: 100px 15px;
     background: #ffffff;
-    text-align: left
+    text-align: left;
+    width: 100%;
 }
 
 #analysis-report-form .file-upload-label {
@@ -1039,6 +1038,7 @@ footer {
     text-align: center;
     padding: 100px 50px;
     overflow: hidden;
+    background-color: #f3f3f3;
 }
 
 #contact-form .name-fields {

@@ -19,6 +19,7 @@
     <link href="css/text-fadein.css" rel="stylesheet">
     <link href="css/submit.css" rel="stylesheet">
     <link href="css/rotating-text.css" rel="stylesheet">
+    <link href="css/enquiry-button.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,25 +31,21 @@
         <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
 
-    <header>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href=".lead">Home</a>
-            </li>
-            <li>
-                <a href="#about">About Us</a>
-            </li>
-            <li>
-                <a href="#experience">Solutions</a>
-            </li>
-            <li>
-                <a href="#testimonials">Testimonials</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Us</a>
-            </li>
-        </ul>
-    </header>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/tsa_logo.png" alt="Company Logo" height="50">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Book Appointment</a>
+        </div>
+        <button href="free-analysis.html" class="free-analysis-button">Free Analysis</button>
+    </div>
+
     <!-- End header -->
 
     <div class="fade-in">
@@ -64,92 +61,8 @@
                 </div>
             </div>
         </div>
-        <a href="free-analysis.html">
-            <div class="letter-image">
-                <div class="animated-mail">
-                    <div class="back-fold"></div>
-                    <div class="letter">
-                        <div class="letter-border"></div>
-                        <div class="letter-context">Request Free Analysis</div>
-                        <div class="letter-stamp">
-                            <div class="letter-stamp-inner"></div>
-                        </div>
-                    </div>
-                    <div class="top-fold"></div>
-                    <div class="body"></div>
-                    <div class="left-fold"></div>
-                </div>
-                <div class="shadow"></div>
-            </div>
-        </a>
     </div>
 
-    <!-- Lead-->
-    <!--<div class="lead">
-        <div class="wrap">
-            <div class="line">
-                <div class="left">
-                    <div class="content">
-                        <span class="spanSlow">Transfreight</span>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="content">
-                        <span class="spanSlow">Transfreight</span>
-                    </div>
-                </div>
-            </div>
-            <div class="line">
-                <div class="left">
-                    <div class="content">
-                        <span class="spanSlow">Solutions</span>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="content">
-                        <span class="spanSlow">Solutions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="line">
-                <div class="left">
-                    <div class="content">
-                        <span class="spanFast">Australia</span>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="content">
-                        <span class="spanFast">Australia</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="free-analysis.html">
-            <div class="letter-image">
-                <div class="animated-mail">
-                    <div class="back-fold"></div>
-                    <div class="letter">
-                        <div class="letter-border"></div>
-                        <div class="letter-context">Request Free Analysis</div>
-                        <div class="letter-stamp">
-                            <div class="letter-stamp-inner"></div>
-                        </div>
-                    </div>
-                    <div class="top-fold"></div>
-                    <div class="body"></div>
-                    <div class="left-fold"></div>
-                </div>
-                <div class="shadow"></div>
-            </div>
-        </a>
-        <div class="typewriter">
-            <h3>A Freight Management Company.</h3>
-        </div>
-    </div>
-    </div>-->
-    <!-- End #lead -->
-
-    <!-- About-->
     <!-- About-->
     <div id="about">
         <div class="row">
@@ -170,8 +83,6 @@
             </div>
         </div>
     </div>
-    </div>
-    <!-- End #about -->
     <!-- End #about -->
 
     <!-- Why Us-->
@@ -183,18 +94,22 @@
         <div class="grid-container2">
             <div class="grid-item">
                 <h2>6m</h2>
+                <img src="images/ICONS-14.svg" alt="Image 1" width="100" height="100">
                 <p>Average Ticket Response Time</p>
             </div>
             <div class="grid-item">
                 <h2>30+</h2>
+                <img src="images/ICONS-27.svg" alt="Image 2" width="100" height="100">
                 <p>Years of Experience</p>
             </div>
             <div class="grid-item">
                 <h2>100+</h2>
+                <img src="images/ICONS-30.svg" alt="Image 3" width="100" height="100">
                 <p>Active Customers</p>
             </div>
             <div class="grid-item">
                 <h2>2M+</h2>
+                <img src="images/ICONS-06.svg" alt="Image 4" width="100" height="100">
                 <p>Shipments Delivered</p>
             </div>
         </div>
@@ -310,7 +225,7 @@
 
     <!-- Testimonials-->
     <div id="testimonials">
-        <h3 class="heading-fixed">Customer Testimonials</h3>
+        <h3 class="heading-fixed">What Our Customers Say About Us</h3>
         <div id="testimonials-rotate">
             <h3 class="heading-fixed">Testimonials</h3>
             <div class="box">

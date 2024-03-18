@@ -8,7 +8,6 @@
 
     // Animate to section when nav is clicked
     $('header a').click(function (e) {
-
         // Treat as normal link if no-scroll class
         if ($(this).hasClass('no-scroll')) return;
 
@@ -44,7 +43,6 @@
 
     // Create timeline
     $('#experience-timeline').each(function () {
-
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
 
@@ -65,7 +63,6 @@
                 $(this).parent().prepend('<span class="vtimeline-date">' + date + '</span>');
             }
         });
-
     });
 
     // Open mobile menu
@@ -84,6 +81,15 @@
         $(this).fadeOut(300, function () {
             $('#more-projects').fadeIn(300);
         });
+    });
+
+    function openForm() {
+        document.getElementById("enquiryForm").style.display = "block";
+    }
+
+    // Add click event listener to the enquiry button
+    enquiryButton.addEventListener("click", function () {
+        openForm();
     });
 
     // Function to pause animations on testimonials hover
@@ -161,25 +167,35 @@
         });
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
-        function counter(id, start, end, duration) {
-            let obj = document.getElementById(id),
-                current = start,
-                range = end - start,
-                increment = end > start ? 1 : -1,
-                step = Math.abs(Math.floor(duration / range)),
-                timer = setInterval(() => {
-                    current += increment;
-                    obj.textContent = current;
-                    if (current == end) {
-                        clearInterval(timer);
-                    }
-                }, step);
+    // General enquiry button and popup window
+    var enquiryButton = document.querySelector(".enquiry-button");
+    var enquiryPopup = document.getElementById("enquiryPopup");
+
+    // Function to toggle the visibility of the popup
+    function togglePopup() {
+        if (enquiryPopup.style.display === "none" || enquiryPopup.style.display === "") {
+            enquiryPopup.style.display = "block";
+        } else {
+            enquiryPopup.style.display = "none";
         }
-        counter("count1", 0, 6, 3000);
-        counter("count2", 0, 30, 3000);
-        counter("count3", 0, 100, 3000);
-        counter("count4", 0, 2, 3000);
+    }
+
+    // Add click event listener to the enquiry button
+    enquiryButton.addEventListener("click", function () {
+        togglePopup();
+    });
+
+    // Function to handle form submission
+    $('#enquiryForm').submit(function (e) {
+        e.preventDefault();
+        // Handle form submission here
+    });
+
+    // Function to handle closing the popup when clicking outside of it
+    window.addEventListener("click", function (event) {
+        if (event.target === enquiryPopup) {
+            enquiryPopup.style.display = "none";
+        }
     });
 
 })(jQuery);
