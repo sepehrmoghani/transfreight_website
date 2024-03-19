@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
-    background: #062439;
+    background: #06243910;
 }
 
 body.active {
@@ -60,13 +60,24 @@ body.active {
 }
 
 .header .free-analysis-button {
+    display: inline-block;
+    /* Ensure button is inline with link */
     background-color: #ff5100;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    /* Remove default underline */
 }
+
+.header .free-analysis-button:hover {
+    background-color: #d14900;
+}
+
+
 
 .header a {
     display: block;
@@ -248,70 +259,76 @@ footer {
     }
 }
 
-.lead {
-    margin: 0;
-    padding: 0;
+.landing-page {
+    position: relative;
     height: 100vh;
+    background: url(../images/landing-image3.jpg);
+
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.landing-page-content {
+    margin-right: 50px;
+    margin-left: 10%;
+    width: 800px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: #062439;
+    align-items: left;
     overflow: hidden;
+    margin-top: 30vh;
+    position: relative;
+    z-index: 2;
 }
 
-.lead .line {
-    width: 200%
-}
-
-.lead .left,
-.lead .right {
-    margin: 0;
-    padding: 0;
-    width: 50vw;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.lead .left {
-    margin: 0;
-    padding: 0;
-    color: #ff5100;
-    transform: skew(0deg, -1deg);
-    /*skew(0deg, -5deg)*/
-}
-
-.lead .right {
-    margin: 0;
-    padding: 0;
+.landing-page-content h1 {
+    font-size: 3em;
+    font-weight: 100;
     color: #ffffff;
-    transform: skew(0deg, 1deg);
-    /*skew(0deg, 5deg)*/
+    letter-spacing: -2px;
+
+
 }
 
-.lead .left .content {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    text-align: center;
+.landing-page-content p,
+.landing-page-content button {
+    color: #ffffff;
 }
 
-.lead .right .content {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    text-align: center;
-    transform: translate(-50vw);
+.landing-page-content button {
+    align-items: left;
+    padding: 15px 30px;
+    background-color: #ff5100;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.lead span {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    font-size: 150px;
-    text-transform: uppercase;
-    line-height: .8;
-    transition: ease-out .6s;
+.landing-page-content button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #d14900;
+    color: #ffffff;
 }
+
+.landing-page::before {
+    /* Use ::before pseudo-element for overlay */
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #062439d8;
+    /* Use rgba to set opacity */
+    z-index: 1;
+}
+
 
 .typewriter {
     position: absolute;
@@ -358,7 +375,7 @@ footer {
     }
 }
 
-#lead-content {
+#container-content {
     color: #ffffff;
     position: absolute;
     z-index: 10;
@@ -370,17 +387,17 @@ footer {
     text-align: center
 }
 
-#lead-content h1,
-#lead-content h2 {
+#container-content h1,
+#container-content h2 {
     margin: 0
 }
 
-#lead-content h3 {
+#container-content h3 {
     font-size: 25px;
     font-weight: lighter;
 }
 
-#lead-content h1 {
+#container-content h1 {
     color: #ffffff;
     font-weight: 900;
     font-size: 3em;
@@ -389,14 +406,14 @@ footer {
     line-height: 0.9em
 }
 
-#lead-content h2 {
+#container-content h2 {
     color: #ffffff;
     font-weight: 500;
     font-size: 2em;
     margin-bottom: 15px
 }
 
-#lead-overlay {
+#container-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -433,6 +450,7 @@ footer {
     background: #fafafa;
     padding: 100px 50px;
     text-align: center;
+    flex-direction: row;
 }
 
 #why-us h2 {
@@ -894,7 +912,7 @@ footer {
 }
 
 #analysis-report-form {
-    padding: 100px 15px;
+    padding: 100px 20px;
     background: #ffffff;
     text-align: left;
     width: 100%;
@@ -905,8 +923,6 @@ footer {
     width: 25%;
     padding: 15px;
     margin-bottom: 15px;
-    /*border: solid #062439;
-    border-width: 1px;*/
     border-radius: 4px;
     background-color: #f3f3f3;
     transition: .5s ease all;
@@ -929,8 +945,6 @@ footer {
 #analysis-report-form input[type="tel"],
 #analysis-report-form input[type="email"] {
     width: 100%;
-    /*border: solid #062439;
-    border-width: 1px;*/
     border-radius: 4px;
 }
 
@@ -1015,30 +1029,11 @@ footer {
     resize: none
 }
 
-/*#analysis-report-form button {
-    display: block;
-    width: 20%;
-    background: #ff5100;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 5px;
-    color: #ffffff;
-    font-weight: 700;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    transition: .5s ease all
-}
-
-#analysis-report-form button:hover {
-    box-shadow: 0 10px 20px 000(0, 0, 0, 0.19), 0 6px 6px ffffff(0, 0, 0, 0.23);
-    background-color: #062439;
-    color: #ffffff;
-}*/
-
 #contact {
     text-align: center;
     padding: 100px 50px;
     overflow: hidden;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
 }
 
 #contact-form .name-fields {
@@ -1093,7 +1088,7 @@ footer {
     border: none;
     border-radius: 4px;
     margin-bottom: 15px;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     transition: .5s ease all;
     font-weight: normal;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -1102,7 +1097,7 @@ footer {
 
 #contact-form select:focus {
     outline: none;
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     /* Change background color on focus */
 }
 
@@ -1115,7 +1110,7 @@ footer {
     border: none;
     border-radius: 4px;
     margin-bottom: 15px;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     transition: .5s ease all;
     font-weight: normal;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -1147,33 +1142,13 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #ffffff
+    background: #f3f3f3
 }
 
 #contact-form textarea {
     height: 150px;
     resize: none
 }
-
-/*#contact-form button {
-    display: block;
-    width: 20%;
-    background: #ff5100;
-    padding: 10px 5px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 4px;
-    color: #ffffff;
-    font-weight: 700;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    transition: .5s ease all
-}
-
-#contact-form button:hover {
-    box-shadow: 0 10px 20px 000(0, 0, 0, 0.19), 0 6px 6px ffffff(0, 0, 0, 0.23);
-    background-color: #062439;
-    color: #ffffff;
-}*/
 
 .optional-section {
     padding: 50px 15px;

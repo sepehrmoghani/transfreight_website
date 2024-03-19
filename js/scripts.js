@@ -171,7 +171,7 @@
     var enquiryButton = document.querySelector(".enquiry-button");
     var enquiryPopup = document.getElementById("enquiryPopup");
 
-    // Function to toggle the visibility of the popup
+    // to toggle the visibility of the popup
     function togglePopup() {
         if (enquiryPopup.style.display === "none" || enquiryPopup.style.display === "") {
             enquiryPopup.style.display = "block";
@@ -198,4 +198,14 @@
         }
     });
 
+    // Button click event to show/hide quick contact
+    $(".btn").click(function () {
+        $(".quick-contact").toggleClass("quick-show");
+    });
+
+    $(".quick-hidden").click(function () {
+        $(".quick-contact").removeClass("quick-show");
+    });
+
 })(jQuery);
+
