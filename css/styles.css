@@ -50,7 +50,7 @@ body.active {
 
 .header .menu {
     display: flex;
-    gap: 20px;
+    gap: 5px;
 }
 
 .header .menu a {
@@ -131,32 +131,67 @@ body.active {
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #ffffff;
+    padding: 20px;
+    background-color: #062439;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer-column {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+    line-height: .8;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    font-size: .9em;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.footer-column a:hover {
+    color: #ff5100;
 }
 
 .copyright {
-    padding-top: 20px;
-    font-size: 10px
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 0.6em;
 }
 
 .copyright p {
     margin: 0;
-    color: #062439;
-    font-size: 10px
+    color: #ffffff;
 }
 
 .top {
-    text-align: center
+    text-align: center;
 }
 
 .top span {
     display: block;
-    margin: 15px auto 0 auto;
-    width: 35px;
-    height: 35px;
-    /*border-radius: 50%;
-    border: 3px solid #062439;*/
+    margin: 60px auto 0 auto;
+    width: 20px;
+    height: 20px;
     text-align: center
 }
 
@@ -165,24 +200,23 @@ footer {
 }
 
 .social {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the far right */
 }
 
 .social ul {
     margin: 5px 0 0 0;
     padding: 0;
     display: flex;
-    /* Use flexbox */
     justify-content: flex-end;
-    /* Align items to the end */
+    /* Align items to the far right */
 }
 
-
 .social li {
-    font-size: 1.25em;
+    font-size: 0.9em;
     list-style: none;
-    margin-left: 10px;
-    /* Add some spacing between icons */
+    margin-left: 50px;
 }
 
 .social a {
@@ -196,7 +230,6 @@ footer {
     color: #ffffff;
     border-radius: 25px;
 }
-
 
 .btn-rounded-white {
     display: inline-block;
@@ -461,7 +494,46 @@ footer {
 
 #why-us p {
     font-size: 20px;
-    color: #000000;
+    color: #062439;
+}
+
+#privacy-policy {
+    background: #ffffff;
+    padding: 100px 50px;
+    text-align: left;
+    flex-direction: row;
+}
+
+#privacy-policy h2 {
+    font-size: 5em;
+    font-weight: lighter;
+    color: #062439;
+}
+
+#privacy-policy p {
+    font-size: 20px;
+    color: #062439;
+}
+
+#faq {
+    background: #ffffff;
+    padding: 10px 50px;
+    text-align: left;
+    flex-direction: row;
+    color: #062439;
+}
+
+#faq h2 {
+    font-size: 1.5em;
+}
+
+#faq h3 {
+    font-weight: lighter;
+}
+
+#faq p {
+    font-size: 0.9em;
+    color: #062439;
 }
 
 #count-up {
@@ -533,36 +605,6 @@ footer {
     }
 }
 
-#experience-timeline {
-    margin: 30px auto 0 auto;
-    position: relative;
-    max-width: 1000px
-}
-
-#experience-timeline:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 303px;
-    right: auto;
-    height: 100%;
-    width: 3px;
-    background: #ffffff;
-    z-index: 0
-}
-
-#experience-timeline:after {
-    position: absolute;
-    content: '';
-    width: 3px;
-    height: 40px;
-    background: #ffffff;
-    background: linear-gradient(to bottom, #ffffff, rgba(52, 152, 219, 0));
-    top: 100%;
-    left: 303px
-}
-
 .experience {
     padding: 100px 50px;
     display: grid;
@@ -576,7 +618,6 @@ footer {
     width: 100%;
     margin: 90px auto;
     position: relative;
-    font-family: 'Helvetica', sans-serif;
 }
 
 .hover-text h2 {
@@ -584,7 +625,7 @@ footer {
     font-size: 2em;
     letter-spacing: -0.05em;
     text-align: center;
-    line-height: 0.5;
+    line-height: 0.9;
     color: #062439;
     transform-origin: center bottom;
     transition: all 0.4s;
@@ -912,10 +953,25 @@ footer {
 }
 
 #analysis-report-form {
-    padding: 100px 20px;
-    background: #ffffff;
     text-align: left;
+    padding: 100px 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#analysis-report-form select {
+    display: block;
     width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #f3f3f3;
+    transition: .5s ease all;
+    font-weight: normal;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #062439;
 }
 
 #analysis-report-form .file-upload-label {
@@ -1191,29 +1247,4 @@ footer {
 
 .optional-section-block ul {
     padding: 0 0 0 15px
-}
-
-@media only screen and (max-width: 750px) {
-
-    #experience-timeline:before,
-    #experience-timeline:after {
-        left: 23px
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px
-    }
-
-    .vtimeline-icon {
-        margin-left: 0
-    }
-
-    .vtimeline-content {
-        margin-left: 70px
-    }
 }
