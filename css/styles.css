@@ -131,7 +131,7 @@ body.active {
 }
 
 footer {
-    padding: 20px;
+    padding: 30px;
     background-color: #062439;
     display: flex;
     flex-wrap: wrap;
@@ -499,14 +499,13 @@ footer {
 
 #privacy-policy {
     background: #ffffff;
-    padding: 100px 50px;
+    padding: 50px 50px;
     text-align: left;
     flex-direction: row;
 }
 
 #privacy-policy h2 {
-    font-size: 5em;
-    font-weight: lighter;
+    font-size: 1.5em;
     color: #062439;
 }
 
@@ -954,7 +953,8 @@ footer {
 
 #analysis-report-form {
     text-align: left;
-    padding: 100px 20px;
+    padding: 20px 20px;
+    padding-bottom: 100px;
     overflow: hidden;
     background-color: #ffffff;
 }

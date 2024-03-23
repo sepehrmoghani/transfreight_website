@@ -155,28 +155,19 @@
 .submit-button .cont {
     position: absolute;
     width: 152px;
-    /*Done*/
-    height: 10px;
     left: 50%;
     top: 50%;
-    margin: -25px
-        /*Done*/
-        0 0 -300px
+    transform: translate(-50%, -50%);
 }
+
 
 .submit-button button {
     border-width: 1px;
     width: 150px;
-    /*Done*/
     height: 50px;
-    /*Done*/
-    /*border-radius*/
     border-radius: 25px;
-    /*Done*/
     background: #ff5100;
-    /*change to orange*/
     position: absolute;
-    /*border: 1px solid #ff5100*/
 }
 
 .submit-button button>span {
