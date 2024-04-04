@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008aa9;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        opacity: .3;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #000;
+        opacity: .2;
+      }
+
+      .cls-4 {
+        fill: #37d0ee;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M50,11H14c-3.9,0-7,3.1-7,7v26c0,3.9,3.1,7,7,7h36c3.9,0,7-3.1,7-7v-26c0-3.9-3.1-7-7-7Z"/>
+  <path class="cls-5" d="M10.5,21.5v-3.5c0-1.9,1.6-3.5,3.5-3.5h3.5"/>
+  <path class="cls-3" d="M57,29c-2.8,0-5,2.2-5,5v10c0,1.1-.9,2-2,2h-12c-2.8,0-5,2.2-5,5h17c3.9,0,7-3.1,7-7v-15h0Z"/>
+  <path class="cls-2" d="M24,16c2.8,0,5-2.2,5-5h-15c-3.9,0-7,3.1-7,7v15h0c2.8,0,5-2.2,5-5v-10c0-1.1.9-2,2-2h10Z"/>
+  <path class="cls-1" d="M18,24h20c1.1,0,2-.9,2-2h0c0-1.1-.9-2-2-2h-20c-1.1,0-2,.9-2,2h0c0,1.1.9,2,2,2Z"/>
+  <path class="cls-1" d="M18,33h20c1.1,0,2-.9,2-2h0c0-1.1-.9-2-2-2h-20c-1.1,0-2,.9-2,2h0c0,1.1.9,2,2,2Z"/>
+  <path class="cls-1" d="M36,42h10c1.1,0,2-.9,2-2h0c0-1.1-.9-2-2-2h-10c-1.1,0-2,.9-2,2h0c0,1.1.9,2,2,2Z"/>
+  <circle class="cls-1" cx="46" cy="22" r="2"/>
+  <circle class="cls-1" cx="46" cy="31" r="2"/>
+</svg>

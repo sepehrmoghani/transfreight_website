@@ -6,7 +6,7 @@
 .btn {
     align-items: left;
     padding: 15px 30px;
-    background-color: #ff5100;
+    background-color: #FB141D;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -39,7 +39,7 @@
 
 .btn--keanu:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background-color: #d14900;
+    background-color: #fb141c96;
     color: #ffffff;
 }
 
@@ -54,7 +54,7 @@
     position: fixed;
     right: -500px;
     top: 0;
-    background: #f1f1f1;
+    background: #f1f1f1ea;
     padding: 20px;
     z-index: 9999;
     transition-duration: 500ms;
