@@ -83,6 +83,10 @@
         });
     });
 
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+
     function openForm() {
         document.getElementById("enquiryForm").style.display = "block";
     }

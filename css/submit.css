@@ -167,16 +167,10 @@
 .submit-button button {
     border-width: 1px;
     width: 150px;
-    /*Done*/
     height: 50px;
-    /*Done*/
-    /*border-radius*/
     border-radius: 25px;
-    /*Done*/
     background: #FB141D;
-    /*change to orange*/
     position: absolute;
-    /*border: 1px solid #FB141D*/
 }
 
 .submit-button button:hover {
@@ -185,7 +179,7 @@
 
 .submit-button button>span {
     font-size: 18px;
-    color: #ffffffff
+    color: #ffffff
 }
 
 .submit-button img {
