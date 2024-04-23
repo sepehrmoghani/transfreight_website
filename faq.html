@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frequently Asked Questions</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -37,11 +36,23 @@
             </a>
         </div>
         <div class="menu">
-            <a href="#">Home</a>
-            <a href="about-us.html"><b>About Us</b></a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <div class="dropdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="faq.html">FAQ</a>
+                    <a href="#">T&Cs</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="software.html">Transport Management Software</a>
+                </div>
+            </div>
+            <a href="#">News</a>
             <a href="#contact">Book an Appointment</a>
         </div>
+        <a href="tel:1300964431" class="phone-number"><img src="images/icons8-phone-96.png" alt="phone" height="30">
+            1300
+            964 431</a>
         <a href="free-analysis.html">
             <button class="free-analysis-button">Request Free Analysis</button>
         </a>
@@ -50,7 +61,7 @@
     <!-- End Title -->
 
     <div class="fade-in">
-        <div class="container">
+        <div class="title-container">
             <div class="box">
                 <div class="title">
                     <div class="block"></div>
@@ -69,7 +80,7 @@
             will take you to the training page, with instructional videos and training manuals.</p>
 
         <h3>How do I login to iConsignit?</h3>
-        <p>Click on the green ‘Customer Login’ button in the top right of this page.</p>
+        <p>Click <a href="https://tsa9.iconsignit.com.au/front/login">Here</a> to login to iConsignit.</p>
 
         <h3>How do I add more users to my iConsignit login?</h3>
         <p>When you are logged into iCONSIGNIT, click on the ‘information’ icon in the bottom left of the screen, this
@@ -101,20 +112,12 @@
             to the ground. Please note that carriers have restrictions to the size of an item that can be
             tailgated, generally anything over 220cm and 500kg will not be suitable for a tailgate delivery.</p>
 
-        <h3>How do I consign freight to a depot to be collected by the customer?</h3>
-        <p>Simply head to our <a href="#">Depot Location</a> page and find
-            the depot closest to your receiver, and use the address as the receivers address. Use the following
-            format for the ‘Business Name’ – ‘ABC Plastics C/o TNT Depot’. Make sure you use the end receivers
-            ‘Contact Name’ and ‘Number’ on the consignment. Make sure you select the same carrier as you are
-            delivering the freight to, eg if you are sending to a TNT Depot, you can only use TNT as the carrier of the
-            freight.</p>
-
         <h3>How do I tell the difference between a business and residential address?</h3>
-        <p><strong>Residential Definition:</strong></p>
+        <p>Residential Definition:</p>
         <p>The fact that a business is being operated from a location does not qualify it as a commercial address. Any
             business being operated from a home, apartment, or other dwelling where people live on the premises is
             considered to be a residential address.</p>
-        <p><strong>Business Definition:</strong></p>
+        <p>Business Definition:</p>
         <p>Commercial addresses are those defined by our freight carrier as commercial sites. Typically these addresses
             are zoned as commercial real estate. Most commercial sites have truck-trailer access and a loading dock.</p>
 
@@ -123,7 +126,7 @@
             deliveries will be shown in the quote. Please note, only Australia Post and Startrack deliver to PO
             Boxes.</p>
 
-        <h3>What is ‘Dead Weight'’?</h3>
+        <h3>What is ‘Dead Weight’?</h3>
         <p>Simply,&nbsp;the physical weight of a consignment.</p>
 
         <h3>What is ‘Cubic Weight’?</h3>
@@ -142,7 +145,7 @@
             weight of 30kg:</p>
         <p>0.4 x 0.5 x 0.6 x 250 = 30kg</p>
 
-        <h3>What is ‘Charge Weight'’?</h3>
+        <h3>What is ‘Charge Weight’?</h3>
         <p>This is the greater of the <em>dead weight</em>&nbsp;and&nbsp;<em>cubic weight.</em></p>
         <p>eg. <strong>Box 1</strong>. 40cm x 50cm x 60cm, weighing 10kg, travelling on a 250 cubic service –
             charge weight is 30kg (based on volume)</p>
@@ -151,38 +154,38 @@
     </div>
 
     <footer>
-        <div class="footer-column">
-            <h3>Navigation</h3>
-            <br>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Resources</h3>
-            <br>
-            <ul class="resources">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-                <!-- Add more resource links as needed -->
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Social Media</h3>
-            <br>
-            <ul class="social-media">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Facebook</a></li>
-                <!-- Add more social media links as needed -->
-            </ul>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col">
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <!-- Add more navigation links as needed -->
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="resources">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <!-- Add more resource links as needed -->
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="social-media">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="email:sales@transfreight.com.au">sales@transfreight.com.au</a></li>
+                        <li><a href="tel:1300964431">1300 964 431</a></li>
+                        <!-- Add more social media links as needed -->
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="copyright">
             <p>
-                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia
+                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia<br>
                 All Rights
                 Reserved.
             </p>

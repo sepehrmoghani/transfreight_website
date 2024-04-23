@@ -7,14 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transfreight Solutions Australia</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfwJL4pAAAAAOe9uiba442vYFmnxvO-kp_RU1Sw">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/submit.css" rel="stylesheet">
@@ -39,43 +43,61 @@
             </a>
         </div>
         <div class="menu">
-            <a href="#">Home</a>
             <a href="about-us.html">About Us</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="services.html">Services</a>
+            <div class="dropdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="faq.html">FAQ</a>
+                    <a href="#">T&Cs</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="software.html">Transport Management Software</a>
+                </div>
+            </div>
+            <a href="#">News</a>
             <a href="#contact">Book an Appointment</a>
         </div>
+        <a href="tel:1300964431" class="phone-number"><img src="images/icons8-phone-96.png" alt="phone" height="30">
+            1300
+            964 431</a>
         <a href="free-analysis.html">
             <button class="free-analysis-button">Request Free Analysis</button>
         </a>
     </div>
 
     <!-- End Title -->
-
     <div class="landing-page">
-        <div class="landing-page-content">
-            <div id="head-overlay"></div>
-            <h1>Excellence is our<br>Unwavering Standard</h1>
-            <p>Our mission here at Transfreight is to navigate the issues of modern day freight and logistics,
-                while giving you clear visibility on your very own custom and tailored strategy.
-                <br>
-                Transfreight partners with selected clients, vertically integrate and become an extension of
-                their supply chain strategy. We are robust, trustworthy and have the capabilities to pivot and
-                adjust when required.
-            </p>
-            <button class="btn">Contact Us</button>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/fast-delivery.svg" alt="Fast Delivery">
+                </div>
+            </div>
+            <!-- Quick contact button starts here -->
+            <div class="modal-container">
+                <input id="modal-toggle" type="checkbox">
+                <label class="modal-btn" for="modal-toggle">Contact Us</label>
+                <label class="modal-backdrop" for="modal-toggle"></label>
+                <form class="modal-content">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="tel" name="phone" placeholder="Your Phone" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="modal-btn-inside">Send Message</button>
+                    <label class="modal-close" for="modal-toggle">✖</label>
+                </form>
+            </div>
         </div>
-        <div class="landing-page-image"></div>
-    </div>
-    
-    
-    <div class="carriers">
-        <img src="images/StarTrack_2020.svg" alt="startrack" height="80">
-        <img src="images/FedEx_Corporation_logo.svg" alt="fedex" height="80">
-        <img src="images/northline.png" alt="northline" height="65">
-        <img src="images/followmont.png" alt="followmont" height="80">
-        <img src="images/couriers-please.png" alt="couriers-please" height="80">
-        <img src="images/tfmxpress.png" alt="tfmx" height="80">
-        <img src="images/capital.png" alt="capital" height="80">
     </div>
 
     <!-- About-->
@@ -84,7 +106,7 @@
             <img src="images/pale-handshake-for-sealing-a-financial-deal.png" alt="ticket response time" height="300">
         </div>
         <div class="col">
-            <h3 class="heading-fixed">ONE CONTACT.<br>ONE PLATFORM.<br>ONE INVOICE.</h3>
+            <h3>ONE CONTACT.<br>ONE PLATFORM.<br>ONE INVOICE.</h3>
         </div>
         <div class="col">
             <p>
@@ -102,46 +124,23 @@
     <!-- End #about -->
 
     <!-- Why Us-->
-    <div id="why-us">
-        <h3 class="heading-fixed">Why Choose Us?</h3>
-        <p>Transfright specializes in delivering custom freight solutions to clients nationwide. With over 30 years
-            of
-            experience, we have built a reputation of quality, expertise, and the ability to deliver complex
-            projects on
-            time and on budget.</p>
-    </div>
-    <div class="why-us-grid">
-        <div class="hover-text">
-            <img src="images/customer-service-01.svg" alt="ticket response time">
-            <div class="text">
-                <div class="inner">
+    <div class="why-us">
+        <h2>Why Choose Us?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
                     <h3>6m</h3>
                     <p>Average Ticket Response Time</p>
                 </div>
-            </div>
-        </div>
-        <div class="hover-text">
-            <img src="images/pale-chart-overlook-at-the-office-01.svg" alt="years of experience">
-            <div class="text">
-                <div class="inner">
+                <div class="col-md-3">
                     <h3>30+</h3>
                     <p>Years of Experience</p>
                 </div>
-            </div>
-        </div>
-        <div class="hover-text">
-            <img src="images/pale-707-01.svg" alt="active customers">
-            <div class="text">
-                <div class="inner">
-                    <h3>100+</h3>
-                    <p>Active Customers</p>
+                <div class="col-md-3">
+                    <h3>500+</h3>
+                    <p>Consignments per Day</p>
                 </div>
-            </div>
-        </div>
-        <div class="hover-text">
-            <img src="images/delivery-made-01.svg" alt="shipments delivered">
-            <div class="text">
-                <div class="inner">
+                <div class="col-md-3">
                     <h3>2M+</h3>
                     <p>Shipments Delivered</p>
                 </div>
@@ -152,54 +151,71 @@
 
     <!-- Experience-->
     <div class="experience">
-        <img src="images/tsa_offer_rm.png" alt="what we offer">
+        <a href="services.html">
+            <img src="images/tsa_offer_rm.png" alt="what we offer" height="1000">
+        </a>
     </div>
     <!-- End #experience -->
 
+    <div class="integration-partners">
+        <h3>Integration Partners</h3>
+        <img src="images/Shopify_Logo.png" alt="shopify-logo" height="150">
+        <img src="images/Oracle_NetSuite_2021.png" alt="oracle netsuite" height="150">
+        <img src="images/magento_logo.png" alt="magento" height="150">
+        <img src="images/MYOB_Logo.png" alt="myob" height="150">
+    </div>
+
     <!-- Testimonials-->
-    <div id="testimonials">
-        <h3 class="heading-fixed">What Our Customers Say About Us</h3>
-        <div id="testimonials-rotate">
-            <h3 class="heading-fixed">Testimonials</h3>
-            <div class="box">
-                <h2>Customer Testimonial 1</h2>
-                <p>
-                    Our software, backed by expert freight professionals, adapts to your growth plans, automates
-                    processes, and improves distribution management efficiencies.
-                </p>
+    <div class="testimonials">
+        <h3>Customer Testimonials</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class="box">
-                <h2>Customer Testimonial 2</h2>
-                <p>
-                    By utilizing our bulk buying power we are able to reduce your total transport costs. Partnering
-                    with
-                    renowned carriers, we offer cost-effective and efficient supply chain solutions.
-                </p>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Client #1</h3>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                        ea proident.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Client #2</h3>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                        ea proident.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Client #3</h3>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                        squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                        ea proident.</p>
+                </div>
             </div>
-            <div class="box">
-                <h2>Customer Testimonial 3</h2>
-                <p>
-                    Work with our team of Australian based freight specialists, to receive exceptional service that
-                    sets
-                    the industry standard for quality and service.
-                </p>
-            </div>
-            <div class="box">
-                <h2>Customer Testimonial 4</h2>
-                <p>
-                    Our team has the comprehensive expertise in the industry and supply chain, as well as business
-                    integration.
-                </p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
     <!-- End #testimonials -->
 
     <!-- Contact-->
     <div id="contact">
-        <h3 class="heading-fixed">Book An Appointment</h3>
+        <h3>Book An Appointment</h3>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/f/xoqzvqok">
+            <form method="POST" action="https://formspree.io/f/xoqzvqok" action="http://httpbin.org/post">
                 <input type="hidden" name="_subject" value="Contact request from transfreight.com.au" />
                 <div class="name-fields">
                     <select name="appointment_type" id="appointment_type" required>
@@ -218,7 +234,7 @@
                 <input type="email" name="_replyto" placeholder="Your Email (required)" required>
                 <input type="text" name="location" placeholder="Location (required)" required>
                 <textarea name="message" placeholder="Your Enquiry" required></textarea>
-                <!--<button type="submit">Submit</button>-->
+                <div class="g-recaptcha" data-sitekey="6LfwJL4pAAAAAOe9uiba442vYFmnxvO-kp_RU1Sw"></div>
                 <div class="submit-button">
                     <button class="btn" type="submit"><span>Submit</span><img
                             src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="30" width="30"></button>
@@ -229,43 +245,44 @@
     <!-- End #contact -->
 
     <footer>
-        <div class="footer-column">
-            <h3>Navigation</h3>
-            <br>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Resources</h3>
-            <br>
-            <ul class="resources">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-                <!-- Add more resource links as needed -->
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Social Media</h3>
-            <br>
-            <ul class="social-media">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Facebook</a></li>
-                <!-- Add more social media links as needed -->
-            </ul>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col">
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <!-- Add more navigation links as needed -->
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="resources">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <!-- Add more resource links as needed -->
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="social-media">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="email:sales@transfreight.com.au">sales@transfreight.com.au</a></li>
+                        <li><a href="tel:1300964431">1300 964 431</a></li>
+                        <!-- Add more social media links as needed -->
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="copyright">
             <p>
-                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia
+                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia<br>
                 All Rights
                 Reserved.
             </p>
         </div>
     </footer>
+
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -274,6 +291,17 @@
     <script src="js/rotating-text.js"></script>
     <script src="js/lead.js"></script>
     <script src="js/quick-contact.js"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6LfwJL4pAAAAAOe9uiba442vYFmnxvO-kp_RU1Sw', { action: 'LOGIN' });
+            });
+        }
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit(); // Submit the form when reCAPTCHA is verified
+        }
+    </script>
 
 </body>
 
