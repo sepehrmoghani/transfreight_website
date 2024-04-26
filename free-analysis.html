@@ -31,7 +31,7 @@
         <div class="header">
                 <div class="logo">
                         <a href="index.html">
-                                <img src="images/tsa_logo.png" alt="Company Logo" height="50">
+                                <img src="images/Transfreight-white.png" alt="Company Logo" height="50">
                         </a>
                 </div>
                 <div class="menu">
@@ -46,8 +46,7 @@
                                         <a href="software.html">Transport Management Software</a>
                                 </div>
                         </div>
-                        <a href="#">News</a>
-                        <a href="#contact">Book an Appointment</a>
+                        <a href="news.html">News</a>
                 </div>
                 <a href="tel:1300964431" class="phone-number"><img src="images/icons8-phone-96.png" alt="phone"
                                 height="30">
@@ -62,7 +61,7 @@
         <div id="analysis-report-form">
                 <h3>Request an Analysis</h3>
                 <p>Please fill the details below </p>
-                <form method="POST" action="https://formspree.io/f/xoqzvqok">
+                <form method="POST" action="https://formspree.io/f/mqkrwwob">
                         <input type="hidden" name="_subject" value="Contact request from transfreight.com.au" />
                         <div class="name-fields">
                                 <input type="text" name="first_name" placeholder="First Name (required)" required>
@@ -80,7 +79,8 @@
                                         analysis.</b></p>
                         <label for="fileUpload" class="file-upload-label grid-item">Choose File</label>
                         <input type="file" name="fileUpload" id="fileUpload" accept="image/*, .pdf, .doc, .docx"
-                                class="file-upload grid-item">
+                                class="file-upload grid-item" onchange="displayFileName()">
+                        <span id="fileName" class="file-name"></span>
 
                         <div class="grid-container">
                                 <div class="grid-item">
@@ -105,121 +105,127 @@
                                 </div>
                                 <div class="grid-item">
                                         <p>What services do you currently use?</p>
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Local"><span
                                                         class="checkboxmark"></span> Local</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Interstate"><span
                                                         class="checkboxmark"></span> Interstate</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="International"><span
                                                         class="checkboxmark"></span> International</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Road Freight"><span
                                                         class="checkboxmark"></span> Road Freight</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Air Freight"><span
                                                         class="checkboxmark"></span> Air Freight</label><br>
                                 </div>
                                 <div class="grid-item">
                                         <p>What is your freight profile?</p>
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Satchel"><span
                                                         class="checkboxmark"></span> Satchel</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Cartons"><span
                                                         class="checkboxmark"></span> Cartons</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Skids"><span
                                                         class="checkboxmark"></span> Skids</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Pallets"><span
                                                         class="checkboxmark"></span> Pallets</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Lengths"><span
                                                         class="checkboxmark"></span> Lengths</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Local"><span
                                                         class="checkboxmark"></span> Local</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Containers"><span
                                                         class="checkboxmark"></span> Containers</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
-                                                        class="checkboxmark"></span> International</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Fully Loads"><span
                                                         class="checkboxmark"></span> Fully Loads</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Ugly"><span
                                                         class="checkboxmark"></span> Ugly</label><br>
                                 </div>
                         </div>
                         <p>Who do you currently use for your Transport?</p>
                         <div class="grid-container">
                                 <div class="grid-item">
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Allied Express"><span
                                                         class="checkboxmark"></span> Allied Express</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="BB reight"><span
                                                         class="checkboxmark"></span> BB reight</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Capital"><span
                                                         class="checkboxmark"></span> Capital</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Couriers Please"><span
                                                         class="checkboxmark"></span> Couriers Please</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="E-Go"><span
                                                         class="checkboxmark"></span> E-Go</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="First Express"><span
                                                         class="checkboxmark"></span> First Express</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Hunter Express"><span
                                                         class="checkboxmark"></span> Hunter Express</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Northline"><span
                                                         class="checkboxmark"></span> Northline</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Startrack"><span
                                                         class="checkboxmark"></span> Startrack</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="TOLL"><span
                                                         class="checkboxmark"></span> TOLL</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="TNT Fedex"><span
                                                         class="checkboxmark"></span> TNT Fedex</label><br>
                                 </div>
                                 <div class="grid-item">
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Australia Post"><span
                                                         class="checkboxmark"></span> Australia Post</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Border Express"><span
                                                         class="checkboxmark"></span> Border Express</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Chem Couriers"><span
                                                         class="checkboxmark"></span> Chem Couriers</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="DHL"><span
                                                         class="checkboxmark"></span> DHL</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="FastWay"><span
                                                         class="checkboxmark"></span> FastWay</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Followmont"><span
                                                         class="checkboxmark"></span> Followmont</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Kings"><span
                                                         class="checkboxmark"></span> Kings</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Sadleirs"><span
                                                         class="checkboxmark"></span> Sadleirs</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Tamex"><span
                                                         class="checkboxmark"></span> Tamex</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="TOLL IPEC"><span
                                                         class="checkboxmark"></span> TOLL IPEC</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="UPS"><span
                                                         class="checkboxmark"></span> UPS</label><br>
                                 </div>
                                 <div class="grid-item">
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Bag Trans"><span
                                                         class="checkboxmark"></span> Bag Trans</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Camerons"><span
                                                         class="checkboxmark"></span> Camerons</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Cope"><span
                                                         class="checkboxmark"></span> Cope</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Direct Freight"><span
                                                         class="checkboxmark"></span> Direct Freight</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Hi Trans"><span
                                                         class="checkboxmark"></span> Hi Trans</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="Less than $20k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Main Freight"><span
                                                         class="checkboxmark"></span> Main Freight</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$20k - $50k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Scotts"><span
                                                         class="checkboxmark"></span> Scotts</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$50k - $150k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="TOLL Express"><span
                                                         class="checkboxmark"></span> TOLL Express</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$150k - $250k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="TOLL Priority"><span
                                                         class="checkboxmark"></span> TOLL Priority</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Freight Broker"><span
                                                         class="checkboxmark"></span> Freight Broker</label><br>
-                                        <label><input type="checkbox" name="annual_spend" value="$250k - $500k"><span
+                                        <label><input type="checkbox" name="annual_spend" value="Other"><span
                                                         class="checkboxmark"></span> Other</label><br>
                                 </div>
                         </div><br>
+                        <div style="display: flex; flex-direction: column;">
+                                <p>What percentage of your freight are Dangerous Goods? (Please enter 0 if none)</p>
+                                <textarea name="DG percentage" placeholder="%" required
+                                        style="height: 55px; margin-bottom: 10px;" required></textarea>
+                                <p>What percentage of your freight are Residential? (Please enter 0 if none)</p>
+                                <textarea name="Residential percentage" placeholder="%" required style="height: 55px;"
+                                        required></textarea>
+                        </div>
                         <textarea name="message" placeholder="Your Message" required></textarea>
-                        <!--<button type="submit">Submit</button>-->
                         <div class="name-fields">
                                 <select name="appointment_type" id="appointment_type" required>
                                         <option value="">Call Back Type</option>
+                                        <option value="phone_consultation">Email</option>
                                         <option value="phone_consultation">Phone consult</option>
                                         <option value="face_to_face">Face to face appointment (Video Call)</option>
                                 </select>
@@ -278,6 +284,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/scripts.min.js"></script>
         <script src="js/hover-scripts.js"></script>
+        <script>
+                function displayFileName() {
+                        const input = document.getElementById('fileUpload');
+                        const fileNameSpan = document.getElementById('fileName');
+
+                        if (input.files.length > 0) {
+                                fileNameSpan.textContent = input.files[0].name;
+                        } else {
+                                fileNameSpan.textContent = '';
+                        }
+                }
+        </script>
 </body>
 
 </html>
