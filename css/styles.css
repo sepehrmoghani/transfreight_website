@@ -88,7 +88,7 @@ body.active {
 .header .free-analysis-button {
     display: inline-block;
     /* Ensure button is inline with link */
-    background-color: #FB141D;
+    background-color: #D93A40;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -119,7 +119,7 @@ body.active {
 .header .menu a:hover {
     color: #ffffff;
     text-decoration: none;
-    border-bottom: 2px solid #FB141D;
+    border-bottom: 2px solid #D93A40;
 }
 
 .header .spacer {
@@ -222,7 +222,7 @@ footer .col a {
 }
 
 footer .col a:hover {
-    color: #FB141D;
+    color: #D93A40;
 }
 
 .contact-us,
@@ -297,7 +297,7 @@ footer .col a:hover {
 }
 
 .social a:hover {
-    background-color: #FB141D;
+    background-color: #D93A40;
     color: #ffffff;
     border-radius: 25px;
 }
@@ -305,7 +305,7 @@ footer .col a:hover {
 .btn-rounded-white {
     display: inline-block;
     color: #ffffff;
-    background-color: #FB141D;
+    background-color: #D93A40;
     padding: 20px 50px;
     /*border: 3px solid #ffffff;*/
     border-radius: 4px;
@@ -426,7 +426,7 @@ footer .col a:hover {
     font-weight: 400;
     overflow: hidden;
     text-transform: uppercase;
-    border-right: .15em solid #FB141D;
+    border-right: .15em solid #D93A40;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
@@ -537,33 +537,24 @@ footer .col a:hover {
     }
 }
 
-#about {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    justify-content: center;
+.about {
+    width: 100%;
     padding: 100px 100px;
+    text-align: center;
+    flex-direction: row;
 }
 
-#about h3 {
+.about h3 {
     font-size: 3em;
     font-weight: 150;
     margin-top: 50px;
 }
 
-#about p {
+.about p {
     color: #062439;
     font-size: 20px;
     text-align: left;
     margin-top: 50px;
-}
-
-#about .col {
-    margin-right: 1px;
-    margin-left: 1px;
-    align-items: center;
-    text-align: center;
 }
 
 .about-us {
@@ -644,6 +635,30 @@ footer .col a:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.news {
+    background: #fffcf9;
+    padding: 100px 100px;
+    flex-direction: row;
+}
+
+.news h2 {
+    font-size: 3em;
+    font-weight: 100;
+    padding-left: 30px;
+}
+
+.news p {
+    margin-bottom: 50px;
+    font-size: 1em;
+    color: #062439;
+    padding: 10px;
+}
+
+.news .row {
+    border: 1px solid #062439;
+    margin: 20px;
+}
+
 .container img {
     margin-top: 100px;
 }
@@ -656,7 +671,7 @@ footer .col a:hover {
     background: #fffcf9;
     min-width: 200px;
     padding: 10px;
-    border: 3px solid #FB141D;
+    border: 3px solid #D93A40;
     border-radius: 3px;
     z-index: 1;
     transition: 1s ease all;
@@ -780,7 +795,7 @@ footer .col a:hover {
 
 .testimonials h2 {
     font-size: 1.8em;
-    color: #FB141D
+    color: #D93A40
 }
 
 .testimonials h3 {
