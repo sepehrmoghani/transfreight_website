@@ -1,0 +1,307 @@
+<!--https://sepehrmoghani.github.io/devportfolio/-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='image/favicon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/submit.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/enquiry-button.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/quick-contact.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/TSA-Offer.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/text-fadein.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='images/Transfreight-white.png') }}" alt="Company Logo"
+                    height="50">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('about_us') }}">About Us</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <div class="dropdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('faq') }}">FAQ</a>
+                    <a href="#">T&Cs</a>
+                    <a href="{{ url_for('privacy_policy') }}">Privacy Policy</a>
+                    <a href="{{ url_for('services') }}">Transport Management Software</a>
+                </div>
+            </div>
+            <a href="{{ url_for('news.view_news') }}">News</a>
+            <a href="#contact">Book an Appointment</a>
+        </div>
+        <a href="tel:1300964431" class="phone-number"><img
+                src="{{ url_for('static', filename='images/icons8-phone-96.png') }}" alt="phone" height="30">
+            1300
+            964 431</a>
+        <a href="{{ url_for('free_analysis') }}">
+            <button class="free-analysis-button">Request Free Analysis</button>
+        </a>
+    </div>
+
+    <!-- End Title -->
+
+    <div class="fade-in">
+        <div class="title-container">
+            <div class="box">
+                <div class="title">
+                    <div class="block"></div>
+                    <h1><span></span>Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Content for Service 1 -->
+                    <img src="{{ url_for('static', filename='images/reduce-freight-cost.svg') }}" alt="shopify-logo"
+                        height="200">
+                    <h3>Reducing Freight Costs</h3>
+                    <button class="clickable-image" data-toggle="collapse" data-target="#collapse1"
+                        aria-expanded="false" aria-controls="collapse1">Read More</button>
+                    <div class="collapse" id="collapse1">
+                        <div class="card card-body">
+                            <p>To transport goods from point A to point B seems a simple task, but there are some
+                                things
+                                you may
+                                not take into consideration that could ultimately be costing you.<br>
+                            <ul>
+                                <li>Are you sending with the right type carrier?</li>
+                                <li>Are you receiving the best freight rates Have your freight prices been compared?
+                                </li>
+                                <li>Is tracking available?</li>
+                                <li>Have we already sent a consignment to this customer today/this week?</li>
+                                <li>Does the invoice reflect the expected price?</li>
+                            </ul>
+                            Our proprietary Freight Management System will answer all of these for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Content for Service 2 -->
+                    <img src="{{ url_for('static', filename='images/third-party-logistics.svg') }}" alt="shopify-logo"
+                        height="200">
+                    <h3>Third Party Logistics</h3>
+                    <button class="clickable-image" data-toggle="collapse" data-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">Read More</button>
+                    <div class="collapse" id="collapse2">
+                        <div class="card card-body">
+                            <p>Many businesses deal with clients outside their own state and require goods to be
+                                transported
+                                every now and then.<br>
+                                <br>Some businesses may fall short of resources to store and transport. In a case
+                                like that
+                                <b>Transfreight</b> has your back. We help businesses store and distribute their
+                                goods
+                                without any delays and interruptions using our tie-ups with the third-party
+                                carriers.<br>
+                                <br>Quality and safety of the good sent in the transport is assured in addition to
+                                its being
+                                economic for the parent
+                                company.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Content for Service 3 -->
+                    <img src="{{ url_for('static', filename='images/reconciled-invoice.svg') }}" alt="shopify-logo"
+                        height="200">
+                    <h3>One Completely Reconciled Invoice</h3>
+                    <button class="clickable-image" data-toggle="collapse" data-target="#collapse3"
+                        aria-expanded="false" aria-controls="collapse3">Read More</button>
+                    <div class="collapse" id="collapse3">
+                        <div class="card card-body">
+                            <p>Reconciling multiple invoices from individual carriers can be excruciating,
+                                time-consuming,
+                                costly, and inefficient and To the inexperienced, near on impossible!<br>
+                                <br><b>Transfreight</b> makes it easy by offerinng you the
+                                simplicity of one fully reconciled invoice which is easy to understand and
+                                transparent.<br>
+                                <br>We check each individual consignment against the carriers rates and request the
+                                credits
+                                BEFORE we invoice
+                                yourselves. This saving calculates at around <b>5.9%</b> without examining the
+                                administration
+                                costs associated.<br>
+                                <br>We have conducted time in motion studies that can (on average) provide total
+                                savings
+                                around <b>9-11% total invoice savings</b>, and we have not looked at the rates yet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Content for Service 4 -->
+                    <img src="{{ url_for('static', filename='images/customer-service.svg') }}" alt="shopify-logo"
+                        height="200">
+                    <h3>Customer Service</h3>
+                    <button class="clickable-image" data-toggle="collapse" data-target="#collapse4"
+                        aria-expanded="false" aria-controls="collapse4">Read More</button>
+                    <div class="collapse" id="collapse4">
+                        <div class="card card-body">
+                            <p>Our customer care team is the cornerstone of your business's success, ensuring your
+                                unparalleled
+                                support and satisfaction. With a dedicated team trained to prioritize
+                                customer needs, we guarantee swift responses to inquiries, adept handling of
+                                concerns, and
+                                proactive engagement to foster lasting relationships.<br>
+                                <br>Our comprehensive approach embrace personalized assistance, streamlined
+                                communication
+                                channels, and continuous improvement
+                                initiatives tailored to meet evolving customer expectations.<br>
+                                <br>By using <b>Transfreight</b>, you're investing in a robust framework that not
+                                only
+                                resolves
+                                issues promptly but also drives your business growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Content for Service 5 -->
+                    <img src="{{ url_for('static', filename='images/partnership.svg') }}" alt="shopify-logo"
+                        height="200">
+                    <h3>Partnerships</h3>
+                    <button class="clickable-image" data-toggle="collapse" data-target="#collapse5"
+                        aria-expanded="false" aria-controls="collapse5">Read More</button>
+                    <div class="collapse" id="collapse5">
+                        <div class="card card-body">
+                            <p>We work with you to reach your targets and goals. We set the KPI’s together and we
+                                provide
+                                systematic reporting so decisions can be made.<br>
+                                <br>We want to be a long term partner to your businesss and will leave no stone
+                                unturned to
+                                achieve
+                                this.<br>
+                                <br>At <b>Transfreight</b> we will work together to fit a package big or small that
+                                suits
+                                your
+                                requirements perfectly. Our team of industry experts analyse the concern, recommend
+                                a
+                                solution
+                                and execute the result.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Content for Service 6 -->
+                    <img src="{{ url_for('static', filename='images/iconsignit.svg') }}" alt="shopify-logo"
+                        height="200">
+                    <h3>Freight Management Software</h3>
+                    <button class="clickable-image" data-toggle="collapse" data-target="#collapse6"
+                        aria-expanded="false" aria-controls="collapse6">Read More</button>
+                    <div class="collapse" id="collapse6">
+                        <div class="card card-body">
+                            <p>The strongest link in the chain of our transport solutions system is our own
+                                proprietary
+                                benchmarking software.<br>
+                                <br>It enables us to instantly analyze your current transport and freight strategy
+                                and
+                                provide
+                                worthwhile recommendations for improvising both its efficiency and cost
+                                management.<br>
+                                <br>Your logistics department will thank us, and your accountants will love us!<br>
+                                <br>We have benchmarking
+                                software
+                                and reports available that carriers and brokers alike can only dream of. We built
+                                our
+                                software
+                                system from the ground up to be the best in the market for maximum flexibility, ease
+                                of use
+                                and
+                                to lead the market in all KPI’s for freight that have market value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col">
+                    <ul class="navigation">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                        <li><a href="{{ url_for('services') }}">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="resources">
+                        <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                        <li><a href="{{ url_for('privacy_policy') }}">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="social-media">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="email:sales@transfreight.com.au">sales@transfreight.com.au</a></li>
+                        <li><a href="tel:1300964431">1300 964 431</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia<br>
+                All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rotating-text.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rotating-text.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lead.js') }}"></script>
+</body>
+
+</html>

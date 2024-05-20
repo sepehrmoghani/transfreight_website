@@ -1,0 +1,218 @@
+<!--https://sepehrmoghani.github.io/devportfolio/-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!--https://sepehrmoghani.github.io/devportfolio/-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='image/favicon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/submit.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/enquiry-button.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/quick-contact.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/TSA-Offer.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/text-fadein.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='images/Transfreight-white.png') }}" alt="Company Logo"
+                    height="50">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('about_us') }}">About Us</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <div class="dropdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('faq') }}">FAQ</a>
+                    <a href="#">T&Cs</a>
+                    <a href="{{ url_for('privacy_policy') }}">Privacy Policy</a>
+                    <a href="{{ url_for('services') }}">Transport Management Software</a>
+                </div>
+            </div>
+            <a href="{{ url_for('news.view_news') }}">News</a>
+            <a href="#contact">Book an Appointment</a>
+        </div>
+        <a href="tel:1300964431" class="phone-number"><img
+                src="{{ url_for('static', filename='images/icons8-phone-96.png') }}" alt="phone" height="30">
+            1300
+            964 431</a>
+        <a href="{{ url_for('free_analysis') }}">
+            <button class="free-analysis-button">Request Free Analysis</button>
+        </a>
+    </div>
+
+    <!-- End Title -->
+
+    <div class="fade-in">
+        <div class="title-container">
+            <div class="box">
+                <div class="title">
+                    <div class="block"></div>
+                    <h1>FAQ
+                        <span></span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq">
+        <h2>iConsignit</h2>
+        <h3>How do I create a consignment?</h3>
+        <p>When you are logged into iCONSIGNIT, click on the ‘information’ icon in the bottom left of the screen, this
+            will take you to the training page, with instructional videos and training manuals.</p>
+
+        <h3>How do I login to iConsignit?</h3>
+        <p>Click <a href="https://tsa9.iconsignit.com.au/front/login">Here</a> to login to iConsignit.</p>
+
+        <h3>How do I add more users to my iConsignit login?</h3>
+        <p>When you are logged into iCONSIGNIT, click on the ‘information’ icon in the bottom left of the screen, this
+            will take you to the training page, where there is a button to ‘Add New User’</p>
+
+        <h3>There is no ETA available for my consignment.</h3>
+        <p>Please note that whilst we endeavour to have all transit times available, there will be instances where no
+            transit times are available. If you require a transit time urgently, please contact Customer Care on <b>1300
+                964 431</b>, email <b>query@transfreight.com.au</b> or through LiveChat.</p>
+
+        <h2>Freight Questions</h2>
+        <h3>What do I do if my freight has not been collected?</h3>
+        <p>Double check that you have ‘booked and manifested’ your freight, if this has been completed, open an enquiry
+            with customer care to inform them that the freight has been missed. Our Customer Care team will rebook
+            and monitor the consignment.</p>
+
+        <h3>What are carriers standard delivery times?</h3>
+        <p>Carriers deliver within business hours, 9am-5pm. As a rule of thumb deliveries are generally completed in the
+            morning, collections are completed in the afternoon.</p>
+
+        <h3>What happens if an item is lost or damaged in transit?</h3>
+        <p>Transfreight is not a common carrier and does not insure goods. Insurance is available on each consignment
+            sent
+            through our platform, however we recommend the sender organises their own marine transit insurance to cover
+            for any losses or damages.</p>
+
+        <h3>What is a tailgate delivery?</h3>
+        <p>Tailgate delivery means that the driver will bring the item(s) to the back of the truck and lower the item(s)
+            to the ground. Please note that carriers have restrictions to the size of an item that can be
+            tailgated, generally anything over 220cm and 500kg will not be suitable for a tailgate delivery.</p>
+
+        <h3>How do I tell the difference between a business and residential address?</h3>
+        <p>Residential Definition:</p>
+        <p>The fact that a business is being operated from a location does not qualify it as a commercial address. Any
+            business being operated from a home, apartment, or other dwelling where people live on the premises is
+            considered to be a residential address.</p>
+        <p>Business Definition:</p>
+        <p>Commercial addresses are those defined by our freight carrier as commercial sites. Typically these addresses
+            are zoned as commercial real estate. Most commercial sites have truck-trailer access and a loading dock.</p>
+
+        <h3>Do you deliver to PO Boxes?</h3>
+        <p>Select the ‘PO Box’ tick box when entering your quote/consignment details, the carriers available for PO Box
+            deliveries will be shown in the quote. Please note, only Australia Post and Startrack deliver to PO
+            Boxes.</p>
+
+        <h3>What is ‘Dead Weight’?</h3>
+        <p>Simply,&nbsp;the physical weight of a consignment.</p>
+
+        <h3>What is ‘Cubic Weight’?</h3>
+        <p>Carriers have to find a happy medium between the size of an item and the weight of an item, this is called
+            the&nbsp;<strong><em>Cubic Conversion Factor</em></strong>.&nbsp; For instance you may send a box that is
+            100 x&nbsp; 100 x 100cm that weighs 5kg, although your box only weighs 5kg, it takes up a large amount of
+            space in the truck, therefore you have to be charged accordingly.&nbsp; You may also send a package that is
+            15 x 15 x 15cm but weighs 100kg, although your item only takes up a small amount of the truck, it is heavy
+            therefore this needs to be taken into account.</p>
+        <p>It is important to note that dead weight, cubic weight and charge weight are always rounded up to the next
+            whole kg.</p>
+        <p>Cubic Weight (Volumetric Weight)</p>
+        <p>This is based on the volume of the freight, using the below equation:</p>
+        <p><em>L(m) x W(m) x H(m) x ‘Cubic Conversion Factor’</em></p>
+        <p>eg.&nbsp; A box with dimensions 40cm x 50cm x 60cm travelling on a service with a 250 cubic will have a cubic
+            weight of 30kg:</p>
+        <p>0.4 x 0.5 x 0.6 x 250 = 30kg</p>
+
+        <h3>What is ‘Charge Weight’?</h3>
+        <p>This is the greater of the <em>dead weight</em>&nbsp;and&nbsp;<em>cubic weight.</em></p>
+        <p>eg. <strong>Box 1</strong>. 40cm x 50cm x 60cm, weighing 10kg, travelling on a 250 cubic service –
+            charge weight is 30kg (based on volume)</p>
+        <p><strong>Box 2</strong>. 40cm x 50cm x 60cm, weighing 40kg, travelling on a 250 cubic service – charge weight
+            is 40kg (based on dead weight).</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col">
+                    <ul class="navigation">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                        <li><a href="{{ url_for('services') }}">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="resources">
+                        <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                        <li><a href="{{ url_for('privacy_policy') }}">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="social-media">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="email:sales@transfreight.com.au">sales@transfreight.com.au</a></li>
+                        <li><a href="tel:1300964431">1300 964 431</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia<br>
+                All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rotating-text.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/rotating-text.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lead.js') }}"></script>
+</body>
+
+</html>

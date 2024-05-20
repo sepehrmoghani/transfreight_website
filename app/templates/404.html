@@ -1,0 +1,137 @@
+<!--https://sepehrmoghani.github.io/devportfolio/-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found</title>
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='image/favicon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/submit.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/enquiry-button.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/quick-contact.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/TSA-Offer.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/text-fadein.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='images/Transfreight-white.png') }}" alt="Company Logo"
+                    height="50">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('about_us') }}">About Us</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <div class="dropdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('faq') }}">FAQ</a>
+                    <a href="#">T&Cs</a>
+                    <a href="{{ url_for('privacy_policy') }}">Privacy Policy</a>
+                    <a href="{{ url_for('services') }}">Transport Management Software</a>
+                </div>
+            </div>
+            <a href="{{ url_for('news.view_news') }}">News</a>
+            <a href="#contact">Book an Appointment</a>
+        </div>
+        <a href="tel:1300964431" class="phone-number"><img
+                src="{{ url_for('static', filename='images/icons8-phone-96.png') }}" alt="phone" height="30">
+            1300
+            964 431</a>
+        <a href="{{ url_for('free_analysis') }}">
+            <button class="free-analysis-button">Request Free Analysis</button>
+        </a>
+    </div>
+    <div class="fade-in">
+        <div class="title-container">
+            <div class="box">
+                <div class="title">
+                    <div class="block"></div>
+                    <h1><span></span>Page Not Found</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-not-found">
+        <h1>404 - Page Not Found!</h1>
+        <p>The page you are looking for does not exist.</p>
+        <a href="{{ url_for('index') }}">
+            <h2>Return to Home Page</h2>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col">
+                    <ul class="navigation">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                        <li><a href="{{ url_for('services') }}">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="resources">
+                        <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                        <li><a href="{{ url_for('privacy_policy') }}">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="social-media">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="email:sales@transfreight.com.au">sales@transfreight.com.au</a></li>
+                        <li><a href="tel:1300964431">1300 964 431</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright &copy; <span id="current-year">2024</span> Transfreight Solutions Australia<br>
+                All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/rotating-text.js"></script>
+    <script src="js/lead.js"></script>
+    <script src="js/quick-contact.js"></script>
+</body>
+
+</html>
